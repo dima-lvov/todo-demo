@@ -11,7 +11,7 @@
     "jhiPrefix": "jhi",
     "entitySuffix": "",
     "dtoSuffix": "DTO",
-    "testFrameworks": ["cypress", "gatling", "cucumber"],
+    "testFrameworks": [],
     "blueprints": [],
     "otherModules": [],
     "pages": [],
@@ -22,9 +22,9 @@
     "packageName": "com.dimon.tododemo",
     "serverPort": "8080",
     "cacheProvider": "ehcache",
-    "enableHibernateCache": false,
+    "enableHibernateCache": true,
     "databaseType": "sql",
-    "devDatabaseType": "postgresql",
+    "devDatabaseType": "h2Disk",
     "prodDatabaseType": "postgresql",
     "buildTool": "maven",
     "serverSideOptions": [],
@@ -43,6 +43,9 @@
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
     "languages": ["en"],
-    "cypressCoverage": true
+    "cypressCoverage": true,
+    "applicationIndex": 0,
+    "entities": ["TodoList", "Todo", "Category", "Tag"],
+    "lastLiquibaseTimestamp": 1634499263000
   }
 }
